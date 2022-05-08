@@ -1,0 +1,80 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  min-height: 126px;
+  align-items: center;
+  gap: 15px;
+
+  p {
+    margin: 0;
+  }
+
+  &__search {
+    display: flex;
+    max-width: 798px;
+    width: 100%;
+    justify-content: space-between;
+
+    p {
+      font-family: 'Raleway';
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 23px;
+      color: #000000;
+    }
+
+    &__el {
+      max-width: 378px;
+      width: 100%;
+      position: relative;
+
+      input:first-child {
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #000000;
+        width: 100%;
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #8E8E8E;
+
+        ::placeholder {
+          font-family: 'Raleway';
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 21px;
+          color: #8E8E8E;
+        }
+      }
+      button{
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        background-image: url("../../Common/img/Search.svg");
+        border: none;
+        right: 0px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+  }
+
+  &__nav {
+    display: flex;
+    max-width: 771px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      font-family: 'Raleway';
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      color: #000000;
+    }
+  }
+}

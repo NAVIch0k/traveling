@@ -1,0 +1,55 @@
+.navigation {
+  min-height: 803px;
+  width: 100%;
+  display: flex;
+  margin-bottom: 77px;
+
+  p{
+    margin: 0;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+  }
+
+  &__city{
+    display: flex;
+    background-image: url("../../../Common/img/Main/city.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    align-items: end;
+    padding-left: 100px;
+    padding-bottom: 42px;
+    box-sizing: border-box;
+  }
+
+  &__park{
+    display: flex;
+    background-image: url("../../../Common/img/Main/park.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    align-items: end;
+    padding-left: 100px;
+    padding-bottom: 42px;
+    box-sizing: border-box;
+  }
+
+  &__attractions{
+    display: flex;
+    background-image: url("../../../Common/img/Main/attractions.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    align-items: end;
+    padding-left: 100px;
+    padding-bottom: 42px;
+    box-sizing: border-box;
+    word-break: break-all;
+  }
+}
