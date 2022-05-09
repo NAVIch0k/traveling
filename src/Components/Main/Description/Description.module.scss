@@ -1,9 +1,14 @@
 .description{
     display: flex;
-    justify-content: space-between;
-    max-width: 1315px;
+    justify-content: space-around;
+    max-width: 1505px;
     width: 100%;
-    padding-left: 100px;
+
+    img{
+        width: 80%;
+        max-width: fit-content;
+        height: fit-content;
+    }
 
     p{
         margin: 0;
