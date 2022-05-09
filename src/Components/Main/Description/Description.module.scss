@@ -1,0 +1,50 @@
+.description{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1315px;
+    width: 100%;
+    padding-left: 100px;
+
+    p{
+        margin: 0;
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+    }
+
+    &__text{
+        max-width: 609px;
+        width: 100%;
+    }
+
+    &__one{
+        p{
+            margin-bottom: 20px;
+        }
+        h2{
+            margin: 0 0 20px;
+            font-family: 'Raleway';
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 47px;
+        }
+    }
+
+    &__two{
+        max-width: 286px;
+        width: 100%;
+        margin-top: 40px;
+        p{
+            margin-bottom: 6px;
+        }
+        p:first-of-type{
+            font-family: 'Raleway';
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+        }
+    }
+}
