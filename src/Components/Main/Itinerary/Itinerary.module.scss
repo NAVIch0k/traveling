@@ -1,0 +1,81 @@
+.itinerary{
+  max-width: 1720px;
+  width: 100%;
+  margin: auto;
+
+  h1{
+    margin: 0 0 40px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  &__maps{
+    display: flex;
+    width: 100%;
+    gap: 12px;
+  }
+
+  &__map{
+    width: 100%;
+  }
+
+  &__when{
+    display: flex;
+
+    p{
+      margin: 0 0 18px;
+      display: flex;
+      align-items: center;
+      font-family: 'Raleway';
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 21px;
+      color: #3270E8;
+    }
+
+    p:first-child::after{
+      content: '';
+      background-image: url("../../../Common/img/Arrow.svg");
+      margin: 0 20px;
+      width: 48px;
+      height: 13px;
+    }
+  }
+
+  &__lubanka{
+    background-image: url("../../../Common/img/Main/Itinerary/Lybanka.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 435px;
+  }
+
+  &__arbat{
+    background-image: url("../../../Common/img/Main/Itinerary/Arbat.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 435px;
+  }
+
+  &__more{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 160px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #383838;
+    &:after{
+      content: '';
+      background-image: url("../../../Common/img/Arrow2.svg");
+      width: 17px;
+      height: 17px;
+      margin-left: 28px;
+    }
+  }
+}

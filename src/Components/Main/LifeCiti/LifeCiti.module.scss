@@ -1,0 +1,79 @@
+.lifeciti{
+  max-width:1720px ;
+  width: 100%;
+  margin: 0 auto;
+
+  svg{
+    justify-self: end;
+    margin-top: 24px;
+    margin-right: 30px;
+  }
+
+  p{
+    margin: 135px 0 70px ;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  &__maps{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: fit-content(1fr);
+    gap: 12.5px;
+  }
+
+  &__map{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-image: url("../../../Common/img/Main/PopularPlace/park.png");
+    background-size: cover;
+    max-width:565px ;
+    width: 100%;
+    height: 424px;
+  }
+
+  &__name{
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    padding-bottom: 28px;
+    align-self: end;
+    p{
+      margin: 0;
+      font-family: 'Raleway';
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23px;
+      color: #FFFFFF;
+    }
+  }
+
+  &__score{
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 35px;
+    background: #3BB33B;
+    border-radius: 8px;
+
+    &_back{
+      background: #8E8E8E;
+    }
+
+    p{
+      height: fit-content;
+      margin: 0;
+      color: white;
+      font-family: 'Raleway';
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+    }
+  }
+}

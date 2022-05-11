@@ -25,6 +25,7 @@
   }
 
   &__city{
+    cursor: pointer;
     display: flex;
     background-image: url("../../../Common/img/Main/city.png");
     @include mod

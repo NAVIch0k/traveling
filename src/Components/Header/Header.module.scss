@@ -1,7 +1,10 @@
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  max-width: 1720px;
+  width: 100%;
   min-height: 126px;
+  margin: 0 auto;
   align-items: center;
   gap: 15px;
 
@@ -16,6 +19,7 @@
     justify-content: space-between;
 
     p {
+      cursor: pointer;
       font-family: 'Raleway';
       font-weight: 600;
       font-size: 20px;
@@ -53,6 +57,7 @@
         top: 0;
         background-image: url("../../Common/img/Search.svg");
         border: none;
+        background-repeat: no-repeat;
         right: 0px;
         width: 20px;
         height: 20px;

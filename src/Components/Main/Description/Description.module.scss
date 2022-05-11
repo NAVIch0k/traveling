@@ -1,13 +1,14 @@
 .description{
     display: flex;
-    justify-content: space-around;
-    max-width: 1505px;
+    max-width: 1720px;
     width: 100%;
+    margin: auto;
 
     img{
         width: 80%;
         max-width: fit-content;
         height: fit-content;
+        margin-right: 100px;
     }
 
     p{
