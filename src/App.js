@@ -8,6 +8,7 @@ import LifeCiti from "./Components/LifeCiti/LifeCiti";
 import Parks from "./Components/Parks/Parks";
 import Attractions from "./Components/Attractions/Attractions";
 import Itineraries from "./Components/Itineraries/Itineraries";
+import Account from "./Components/Account/Account";
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
                 <Route path={'/parks'} render={()=><Parks/>}/>
                 <Route path={'/attractions'} render={()=><Attractions/>}/>
                 <Route path={'/itineraries'} render={()=><Itineraries/>}/>
+                <Route path={'/user'} render={()=><Account/>}/>
                 <Route path='*' render={() => alert("404")}/>
             </Switch>
             <Footer/>
