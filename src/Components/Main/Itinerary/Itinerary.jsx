@@ -1,5 +1,6 @@
 import React from "react";
 import s from './Itinerary.module.scss'
+import {NavLink} from "react-router-dom";
 
 const Itinerary = () => {
     return (
@@ -21,7 +22,7 @@ const Itinerary = () => {
                     <div className={s.itinerary__arbat}></div>
                 </div>
             </div>
-            <p className={s.itinerary__more}>Больше автобусных маршрутов</p>
+            <NavLink to={'/itineraries'} className={s.itinerary__more}>Больше автобусных маршрутов</NavLink>
         </div>
     )
 }

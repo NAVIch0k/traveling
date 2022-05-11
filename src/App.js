@@ -4,9 +4,10 @@ import Footer from "./Components/Footer/Footer";
 import {Redirect, Route, Switch} from "react-router-dom";
 import LogIn from "./Components/LogIn/LogIn";
 import Main from "./Components/Main/Main";
-import LifeCiti from "./Components/Main/LifeCiti/LifeCiti";
-import Parks from "./Components/Main/Parks/Parks";
-import Attractions from "./Components/Main/Attractions/Attractions";
+import LifeCiti from "./Components/LifeCiti/LifeCiti";
+import Parks from "./Components/Parks/Parks";
+import Attractions from "./Components/Attractions/Attractions";
+import Itineraries from "./Components/Itineraries/Itineraries";
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                 <Route path={'/lifeciti'} render={()=><LifeCiti/>}/>
                 <Route path={'/parks'} render={()=><Parks/>}/>
                 <Route path={'/attractions'} render={()=><Attractions/>}/>
+                <Route path={'/itineraries'} render={()=><Itineraries/>}/>
                 <Route path='*' render={() => alert("404")}/>
             </Switch>
             <Footer/>

@@ -1,14 +1,14 @@
 import React from "react";
-import Header from "../../Header/Header";
+import Header from "../Header/Header";
 import s from './Attractions.module.scss'
-import {ReactComponent as Like} from "../../../Common/img/like.svg";
+import {ReactComponent as Like} from "../../Common/img/like.svg";
 
 const Attractions = () => {
     return (
         <>
             <Header/>
             <div className={s.lifeciti}>
-                <p>Здесь вы можете выбрать, какие достопримечательности хотите посмотреть</p>
+                <p>Здесь вы можете выбрать автобусные маршруты в городе, по которым можно прокатиться</p>
                 <div className={s.lifeciti__maps}>
                     <div className={s.lifeciti__map}>
                         <Like/>

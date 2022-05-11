@@ -1,14 +1,14 @@
 import React from "react";
-import Header from "../../Header/Header";
-import s from './Parks.module.scss'
-import {ReactComponent as Like} from "../../../Common/img/like.svg";
+import Header from "../Header/Header";
+import s from './LifeCiti.module.scss'
+import {ReactComponent as Like} from "../../Common/img/like.svg";
 
-const Parks = () => {
+const LifeCiti = () => {
     return (
         <>
             <Header/>
             <div className={s.lifeciti}>
-                <p>Здесь вы можете выбрать парк, в который хотите сходить</p>
+                <p>Здесь вы можете выбрать куда сходить и посмотреть жизнь города</p>
                 <div className={s.lifeciti__maps}>
                     <div className={s.lifeciti__map}>
                         <Like/>
@@ -58,4 +58,4 @@ const Parks = () => {
     )
 }
 
-export default Parks
+export default LifeCiti

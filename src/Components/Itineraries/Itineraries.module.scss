@@ -3,15 +3,16 @@
   width: 100%;
   margin: auto;
 
-  h1{
-    margin: 0 0 40px;
+  p{
+    margin: 130px 0 70px;
     font-family: 'Raleway';
     font-weight: 400;
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 24px;
+    line-height: 28px;
   }
 
   &__maps{
+    margin-top: 40px;
     display: flex;
     width: 100%;
     gap: 12px;
@@ -37,7 +38,7 @@
 
     p:first-child::after{
       content: '';
-      background-image: url("../../../Common/img/Arrow.svg");
+      background-image: url("../../Common/img/Arrow.svg");
       margin: 0 20px;
       width: 48px;
       height: 13px;
@@ -45,7 +46,7 @@
   }
 
   &__lubanka{
-    background-image: url("../../../Common/img/Main/Itinerary/Lybanka.png");
+    background-image: url("../../Common/img/Main/Itinerary/Lybanka.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
@@ -53,30 +54,10 @@
   }
 
   &__arbat{
-    background-image: url("../../../Common/img/Main/Itinerary/Arbat.png");
+    background-image: url("../../Common/img/Main/Itinerary/Arbat.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
     height: 435px;
-  }
-
-  &__more{
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    margin: 40px 0 160px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    color: #383838;
-    &:after{
-      content: '';
-      background-image: url("../../../Common/img/Arrow2.svg");
-      width: 17px;
-      height: 17px;
-      margin-left: 28px;
-    }
   }
 }
