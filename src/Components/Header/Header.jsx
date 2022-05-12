@@ -5,11 +5,12 @@ import {NavLink, useHistory} from "react-router-dom";
 
 const Header = () => {
 
-    let history=useHistory()
+    let history = useHistory()
 
-    let main=()=>{
+    let main = () => {
         history.push('/main')
     }
+
 
     return (
         <div className={s.header}>
@@ -22,7 +23,7 @@ const Header = () => {
             </div>
             <nav className={s.header__nav}>
                 <NavLink to={'/main'}>Главная</NavLink>
-                <NavLink to={'#'}>Популярные места</NavLink>
+                <a href={'#popularplace'}>Популярные места</a>
                 <NavLink to={'#'}>Стать гидом</NavLink>
                 <NavLink to={'#'}>Избранное</NavLink>
                 <NavLink to={'#'}>Евгений</NavLink>

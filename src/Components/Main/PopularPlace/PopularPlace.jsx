@@ -8,9 +8,9 @@ import Park1 from '../../../Common/img/Main/PopularPlace/park.png'
 import Park2 from '../../../Common/img/Main/PopularPlace/park2.png'
 import Teatr from '../../../Common/img/Main/PopularPlace/teatr.png'
 
-const PopularPlace=()=>{
-    return(
-        <div className={s.popularPlace}>
+const PopularPlace = () => {
+    return (
+        <div className={s.popularPlace} id='popularplace'>
             <h1>Популярные места в Москве</h1>
             <div className={s.popularPlace__cont}>
                 <div className={s.popularPlace__el}>
@@ -34,7 +34,7 @@ const PopularPlace=()=>{
                     <Like/>
                     <div className={s.popularPlace__name}>
                         <p>ВДНХ</p>
-                        <div className={s.popularPlace__score+' '+s.popularPlace__score_back}><p>3/5</p></div>
+                        <div className={s.popularPlace__score + ' ' + s.popularPlace__score_back}><p>3/5</p></div>
                     </div>
                 </div>
                 <div className={s.popularPlace__el}>
