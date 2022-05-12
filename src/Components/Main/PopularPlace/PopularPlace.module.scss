@@ -1,104 +1,83 @@
-@mixin mod{
-    background-size: cover;
-    max-width: 565px;
-    width: 100%;
-    height: 404px;
-    display: grid;
-    grid-template-rows: 1fr;
-}
+.popularPlace {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 200px auto;
+  max-width: 1720px;
+  width: 100%;
 
-.popularPlace{
+  h1 {
+    margin: 0 0 40px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  &__cont {
     width: 100%;
-    box-sizing: border-box;
-    margin: 200px auto;
-    max-width: 1720px;
-    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12.5px;
+  }
+
+  &__el{
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
     svg{
-        justify-self: end;
-        margin-top: 24px;
-        margin-right: 30px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  }
+
+  &__name {
+    position: absolute;
+    left: 24px;
+    bottom: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      margin: 0;
+      font-family: 'Raleway';
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23px;
+      color: #FFFFFF;
+    }
+  }
+
+  &__score {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 35px;
+    background: #3BB33B;
+    border-radius: 8px;
+
+    &_back {
+      background: #8E8E8E;
     }
 
-    h1{
-        margin: 0 0 40px;
-        font-family: 'Raleway';
-        font-weight: 400;
-        font-size: 32px;
-        line-height: 38px;
+    p {
+      height: fit-content;
+      margin: 0;
+      color: white;
+      font-family: 'Raleway';
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      font-feature-settings: 'pnum' on, 'lnum' on;
     }
-
-    &__cont{
-        width: 100%;
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 12.5px;
-    }
-
-    &__kreml{
-        background-image: url(../../../Common/img/Main/PopularPlace/kreml.png);
-        @include mod
-    }
-    &__citi{
-        background-image: url(../../../Common/img/Main/PopularPlace/citi.png);
-        @include mod
-    }
-    &__vdnhl{
-        background-image: url(../../../Common/img/Main/PopularPlace/vdnh.png);
-        @include mod
-    }
-    &__park1{
-        background-image: url(../../../Common/img/Main/PopularPlace/park.png);
-        @include mod
-    }
-    &__park2{
-        background-image: url(../../../Common/img/Main/PopularPlace/park2.png);
-        @include mod
-    }
-    &__teatr{
-        background-image: url(../../../Common/img/Main/PopularPlace/teatr.png);
-        @include mod
-    }
-
-    &__name{
-        display: flex;
-        align-items: center;
-        padding-left: 24px;
-        padding-bottom: 28px;
-        p{
-            margin: 0;
-            font-family: 'Raleway';
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 23px;
-            color: #FFFFFF;
-        }
-    }
-
-    &__score{
-        margin-left: 15px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 55px;
-        height: 35px;
-        background: #3BB33B;
-        border-radius: 8px;
-
-        &_back{
-            background: #8E8E8E;
-        }
-
-        p{
-            height: fit-content;
-            margin: 0;
-            color: white;
-            font-family: 'Raleway';
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 19px;
-            font-feature-settings: 'pnum' on, 'lnum' on;
-        }
-    }
+  }
 }

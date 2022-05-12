@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../Header/Header";
 import s from './Parks.module.scss'
 import {ReactComponent as Like} from "../../Common/img/like.svg";
+import Park from "../../Common/img/Main/PopularPlace/park.png"
 
 const Parks = () => {
     return (
@@ -11,6 +12,7 @@ const Parks = () => {
                 <p>Здесь вы можете выбрать парк, в который хотите сходить</p>
                 <div className={s.lifeciti__maps}>
                     <div className={s.lifeciti__map}>
+                        <img src={Park}/>
                         <Like/>
                         <div className={s.lifeciti__name}>
                             <p>ВДНХ</p>
@@ -18,6 +20,7 @@ const Parks = () => {
                         </div>
                     </div>
                     <div className={s.lifeciti__map}>
+                        <img src={Park}/>
                         <Like/>
                         <div className={s.lifeciti__name}>
                             <p>ВДНХ</p>
@@ -25,6 +28,7 @@ const Parks = () => {
                         </div>
                     </div>
                     <div className={s.lifeciti__map}>
+                        <img src={Park}/>
                         <Like/>
                         <div className={s.lifeciti__name}>
                             <p>ВДНХ</p>
@@ -32,6 +36,7 @@ const Parks = () => {
                         </div>
                     </div>
                     <div className={s.lifeciti__map}>
+                        <img src={Park}/>
                         <Like/>
                         <div className={s.lifeciti__name}>
                             <p>ВДНХ</p>
@@ -39,6 +44,7 @@ const Parks = () => {
                         </div>
                     </div>
                     <div className={s.lifeciti__map}>
+                        <img src={Park}/>
                         <Like/>
                         <div className={s.lifeciti__name}>
                             <p>ВДНХ</p>
@@ -46,6 +52,7 @@ const Parks = () => {
                         </div>
                     </div>
                     <div className={s.lifeciti__map}>
+                        <img src={Park}/>
                         <Like/>
                         <div className={s.lifeciti__name}>
                             <p>ВДНХ</p>

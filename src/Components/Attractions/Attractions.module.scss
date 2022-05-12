@@ -1,15 +1,9 @@
-.lifeciti{
-  max-width:1720px ;
+.lifeciti {
+  max-width: 1720px;
   width: 100%;
   margin: 0 auto;
 
-  svg{
-    justify-self: end;
-    margin-top: 24px;
-    margin-right: 30px;
-  }
-
-  p{
+  p {
     margin: 130px 0 70px;
     font-family: 'Raleway';
     font-weight: 400;
@@ -17,7 +11,7 @@
     line-height: 28px;
   }
 
-  &__maps{
+  &__maps {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -25,23 +19,31 @@
     gap: 12.5px;
   }
 
-  &__map{
-    display: grid;
-    grid-template-columns: 1fr;
-    background-image: url("../../Common/img/Main/PopularPlace/park.png");
-    background-size: cover;
-    max-width:565px ;
-    width: 100%;
-    height: 424px;
+  &__map {
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    svg {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
   }
 
-  &__name{
+  &__name {
+    position: absolute;
     display: flex;
     align-items: center;
-    padding-left: 24px;
-    padding-bottom: 28px;
-    align-self: end;
-    p{
+    justify-content: center;
+    left: 24px;
+    bottom: 28px;
+
+    p {
       margin: 0;
       font-family: 'Raleway';
       font-weight: 400;
@@ -51,7 +53,7 @@
     }
   }
 
-  &__score{
+  &__score {
     margin-left: 15px;
     display: flex;
     align-items: center;
@@ -61,11 +63,11 @@
     background: #3BB33B;
     border-radius: 8px;
 
-    &_back{
+    &_back {
       background: #8E8E8E;
     }
 
-    p{
+    p {
       height: fit-content;
       margin: 0;
       color: white;
