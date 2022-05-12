@@ -1,24 +1,24 @@
-.user{
+.user {
   max-width: 1720px;
   width: 100%;
   margin: 110px auto 250px;
 
-  &__description{
+  &__description {
     display: flex;
     justify-content: space-between;
   }
 
-  &__ava{
+  &__ava {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    svg{
+    svg {
       width: 270px;
       height: 270px;
     }
 
-    p{
+    p {
       cursor: pointer;
       display: flex;
       align-items: center;
@@ -35,11 +35,11 @@
     }
   }
 
-  &__score{
+  &__score {
     display: flex;
     flex-direction: column;
 
-    &__name{
+    &__name {
       margin: 0 0 10px;
       font-family: 'Raleway';
       font-weight: 400;
@@ -47,7 +47,7 @@
       line-height: 28px;
     }
 
-    &__drop{
+    &__drop {
       margin: 0 0 30px;
       cursor: pointer;
       font-family: 'Raleway';
@@ -58,12 +58,12 @@
       font-feature-settings: 'pnum' on, 'lnum' on;
     }
 
-    &__el{
+    &__el {
       display: flex;
       align-items: center;
       gap: 10px;
 
-      p{
+      p {
         margin: 0;
         font-family: 'Raleway';
         font-weight: 400;
@@ -72,7 +72,7 @@
         font-feature-settings: 'pnum' on, 'lnum' on;
       }
 
-      div{
+      div {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -80,7 +80,8 @@
         height: 35px;
         background: #3BB33B;
         border-radius: 8px;
-        p{
+
+        p {
           font-family: 'Raleway';
           font-weight: 600;
           font-size: 16px;
@@ -92,11 +93,11 @@
     }
   }
 
-  &__place{
+  &__place {
     display: flex;
     flex-direction: column;
 
-    p{
+    p {
       margin: 0 0 20px;
       font-family: 'Raleway';
       font-weight: 400;
@@ -104,7 +105,7 @@
       line-height: 28px;
     }
 
-    a{
+    a {
       margin-bottom: 15px;
       font-family: 'Raleway';
       font-weight: 400;
@@ -114,13 +115,36 @@
     }
   }
 
-  &__self{
+  &__addplace{
+    margin-top: 41px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    width: 186px;
+    height: 31px;
+    background: #FFC56F;
+    border-radius: 8px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    &::after{
+      content: '';
+      background-image: url("../../Common/img/plus.svg");
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &__self {
     display: flex;
     flex-direction: column;
     max-width: 705px;
     width: 100%;
 
-    p:first-child{
+    p:first-child {
       margin: 0 0 20px;
       font-family: 'Raleway';
       font-weight: 400;
@@ -128,7 +152,7 @@
       line-height: 28px;
     }
 
-    p:last-child{
+    p:last-child {
       margin: 0;
       font-family: 'Raleway';
       font-weight: 400;
@@ -137,10 +161,10 @@
     }
   }
 
-  &__placeimg{
+  &__placeimg {
     margin-top: 100px;
 
-    p{
+    p {
       margin: 0 0 40px;
       font-family: 'Raleway';
       font-weight: 400;
@@ -149,23 +173,66 @@
     }
   }
 
-  &__img{
-    position: relative;
+  &__img {
     display: grid;
-    grid-template-columns: repeat(3,minmax(100px, 1fr));
-    grid-template-rows: repeat(auto-fit,1fr);
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-template-rows: repeat(auto-fit, 1fr);
     gap: 20px;
 
-    &__score{
-      position: absolute;
-      bottom: 0;
-      display: flex;
+    &__score {
+      position: relative;
+
+      svg {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+      }
+
+      &__el {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: 23px;
+        bottom: 23px;
+
+        &_mod{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-left: 15px ;
+          width: 55px;
+          height: 35px;
+          background: #3BB33B;
+          border-radius: 8px;
+          p{
+            font-family: 'Raleway';
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+          }
+        }
+
+        p {
+          margin: 0;
+          font-family: 'Raleway';
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 23px;
+          color: #FFFFFF;
+        }
+      }
     }
-    img{
+
+    img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
   }
 
+}
+
+.bad{
+  background: #8E8E8E;
 }

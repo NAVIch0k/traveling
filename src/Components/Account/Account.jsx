@@ -4,6 +4,7 @@ import Header from "../Header/Header";
 import {ReactComponent as Avatar} from "../../Common/img/Avatar.svg";
 import {NavLink} from "react-router-dom";
 import Citi from "../../Common/img/Main/PopularPlace/citi.png";
+import {ReactComponent as Like} from '../../Common/img/like.svg';
 
 const Account = () => {
     return (
@@ -45,19 +46,48 @@ const Account = () => {
                 <div className={s.user__placeimg}>
                     <p>Может показать эти места</p>
                     <div className={s.user__img}>
-                        <div>
+                        <div className={s.user__img__score}>
                             <img src={Citi}/>
-                            <div className={s.user__img__score}>
+                            <Like/>
+                            <div className={s.user__img__score__el}>
                                 <p>Парк “Сокольники”</p>
-                                <div>
+                                <div className={s.user__img__score__el_mod+' '+s.bad}>
                                     <p>3/5</p>
                                 </div>
                             </div>
                         </div>
-                        <div><img src={Citi}/></div>
-                        <div><img src={Citi}/></div>
-                        <div><img src={Citi}/></div>
+                        <div className={s.user__img__score}>
+                            <img src={Citi}/>
+                            <Like/>
+                            <div className={s.user__img__score__el}>
+                                <p>Парк “Сокольники”</p>
+                                <div className={s.user__img__score__el_mod}>
+                                    <p>5/5</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={s.user__img__score}>
+                            <img src={Citi}/>
+                            <Like/>
+                            <div className={s.user__img__score__el}>
+                                <p>Парк “Сокольники”</p>
+                                <div className={s.user__img__score__el_mod}>
+                                    <p>5/5</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={s.user__img__score}>
+                            <img src={Citi}/>
+                            <Like/>
+                            <div className={s.user__img__score__el}>
+                                <p>Парк “Сокольники”</p>
+                                <div className={s.user__img__score__el_mod}>
+                                    <p>4/5</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <button className={s.user__addplace}>Добавить место</button>
                 </div>
             </div>
         </>
