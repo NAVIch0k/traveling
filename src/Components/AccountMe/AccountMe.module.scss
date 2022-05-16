@@ -17,22 +17,15 @@
       width: 270px;
       height: 270px;
     }
+  }
 
-    p {
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 110px;
-      height: 33px;
-      border: 1px solid #3BB33B;
-      border-radius: 8px;
-      font-family: 'Raleway';
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 23px;
-      color: #3BB33B;
-    }
+  &__logout{
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration-line: underline;
+    font-feature-settings: 'pnum' on, 'lnum' on;
   }
 
   &__score {
@@ -112,6 +105,29 @@
       font-size: 16px;
       line-height: 19px;
       color: #120A8F;
+    }
+  }
+
+  &__addplace{
+    margin-top: 41px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    width: 186px;
+    height: 31px;
+    background: #FFC56F;
+    border-radius: 8px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    &::after{
+      content: '';
+      background-image: url("../../Common/img/plus.svg");
+      width: 16px;
+      height: 16px;
     }
   }
 

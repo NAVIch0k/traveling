@@ -9,6 +9,8 @@ import Parks from "./Components/Parks/Parks";
 import Attractions from "./Components/Attractions/Attractions";
 import Itineraries from "./Components/Itineraries/Itineraries";
 import Account from "./Components/Account/Account";
+import AccountMe from "./Components/AccountMe/AccountMe";
+import InfoAboutPlace from "./Components/InfoAboutPlace/InfoAboutPlace";
 
 function App() {
     return (
@@ -23,6 +25,8 @@ function App() {
                 <Route path={'/attractions'} render={()=><Attractions/>}/>
                 <Route path={'/itineraries'} render={()=><Itineraries/>}/>
                 <Route path={'/user'} render={()=><Account/>}/>
+                <Route path={'/userme'} render={()=><AccountMe/>}/>
+                <Route path={'/aboutplace'} render={()=><InfoAboutPlace/>}/>
                 <Route path='*' render={() => alert("404")}/>
             </Switch>
             <Footer/>

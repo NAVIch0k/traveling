@@ -26,8 +26,8 @@ const Header = () => {
                 <a href={'#popularplace'}>Популярные места</a>
                 <NavLink to={'#'}>Стать гидом</NavLink>
                 <NavLink to={'#'}>Избранное</NavLink>
-                <NavLink to={'#'}>Евгений</NavLink>
-                <Avatar/>
+                <NavLink to={'/userme'}>Евгений</NavLink>
+                <NavLink to={'/userme'}><Avatar/></NavLink>
             </nav>
         </div>
     )

@@ -12,7 +12,7 @@ const Parks = () => {
                 <p>Здесь вы можете выбрать парк, в который хотите сходить</p>
                 <div className={s.lifeciti__maps}>
                     <div className={s.lifeciti__map}>
-                        <img src={Park}/>
+                        <img src={Park} alt={'park'}/>
                         <Like/>
                         <div className={s.lifeciti__name}>
                             <p>ВДНХ</p>
@@ -20,7 +20,7 @@ const Parks = () => {
                         </div>
                     </div>
                     <div className={s.lifeciti__map}>
-                        <img src={Park}/>
+                        <img src={Park} alt={'park'}/>
                         <Like/>
                         <div className={s.lifeciti__name}>
                             <p>ВДНХ</p>
@@ -28,7 +28,7 @@ const Parks = () => {
                         </div>
                     </div>
                     <div className={s.lifeciti__map}>
-                        <img src={Park}/>
+                        <img src={Park} alt={'park'}/>
                         <Like/>
                         <div className={s.lifeciti__name}>
                             <p>ВДНХ</p>
@@ -36,7 +36,7 @@ const Parks = () => {
                         </div>
                     </div>
                     <div className={s.lifeciti__map}>
-                        <img src={Park}/>
+                        <img src={Park} alt={'park'}/>
                         <Like/>
                         <div className={s.lifeciti__name}>
                             <p>ВДНХ</p>
@@ -44,7 +44,7 @@ const Parks = () => {
                         </div>
                     </div>
                     <div className={s.lifeciti__map}>
-                        <img src={Park}/>
+                        <img src={Park} alt={'park'}/>
                         <Like/>
                         <div className={s.lifeciti__name}>
                             <p>ВДНХ</p>
@@ -52,7 +52,7 @@ const Parks = () => {
                         </div>
                     </div>
                     <div className={s.lifeciti__map}>
-                        <img src={Park}/>
+                        <img src={Park} alt={'park'}/>
                         <Like/>
                         <div className={s.lifeciti__name}>
                             <p>ВДНХ</p>

@@ -1,12 +1,10 @@
 .header {
   display: flex;
   justify-content: space-between;
-  max-width: 1720px;
-  width: 100%;
   min-height: 126px;
-  margin: 0 auto;
   align-items: center;
   gap: 15px;
+  margin: 0 100px;
 
   p {
     margin: 0;

@@ -14,7 +14,7 @@ const PopularPlace = () => {
             <h1>Популярные места в Москве</h1>
             <div className={s.popularPlace__cont}>
                 <div className={s.popularPlace__el}>
-                    <img src={Kreml}/>
+                    <img src={Kreml} alt={'kreml'}/>
                     <Like/>
                     <div className={s.popularPlace__name}>
                         <p>Московский кремль</p>
@@ -22,7 +22,7 @@ const PopularPlace = () => {
                     </div>
                 </div>
                 <div className={s.popularPlace__el}>
-                    <img src={Citi}/>
+                    <img src={Citi} alt={'citi'}/>
                     <Like/>
                     <div className={s.popularPlace__name}>
                         <p>Бизнес-центр Москва-Сити</p>
@@ -30,7 +30,7 @@ const PopularPlace = () => {
                     </div>
                 </div>
                 <div className={s.popularPlace__el}>
-                    <img src={Vdnh}/>
+                    <img src={Vdnh} alt={'vdnh'}/>
                     <Like/>
                     <div className={s.popularPlace__name}>
                         <p>ВДНХ</p>
@@ -38,7 +38,7 @@ const PopularPlace = () => {
                     </div>
                 </div>
                 <div className={s.popularPlace__el}>
-                    <img src={Park1}/>
+                    <img src={Park1} alt={'teatr'}/>
                     <Like/>
                     <div className={s.popularPlace__name}>
                         <p>Парк Горького</p>
@@ -46,7 +46,7 @@ const PopularPlace = () => {
                     </div>
                 </div>
                 <div className={s.popularPlace__el}>
-                    <img src={Park2}/>
+                    <img src={Park2} alt={'teatr'}/>
                     <Like/>
                     <div className={s.popularPlace__name}>
                         <p>Парк “Царицыно”</p>
@@ -54,7 +54,7 @@ const PopularPlace = () => {
                     </div>
                 </div>
                 <div className={s.popularPlace__el}>
-                    <img src={Teatr}/>
+                    <img src={Teatr} alt={'teatr'}/>
                     <Like/>
                     <div className={s.popularPlace__name}>
                         <p>Большой театр</p>

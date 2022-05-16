@@ -16,15 +16,15 @@ const NavigationImd=()=>{
     return(
         <div className={s.navigation}>
             <div className={s.navigation__el} onClick={()=>nav('/lifeciti')}>
-                <img src={Citi}/>
+                <img src={Citi} alt={'citi'}/>
                 <p>Жизнь города</p>
             </div>
             <div className={s.navigation__el} onClick={()=>nav('/parks')}>
-                <img src={Park}/>
+                <img src={Park} alt={'park'}/>
                 <p>Парки </p>
             </div>
             <div className={s.navigation__el} onClick={()=>nav('/attractions')}>
-                <img src={Attractions}/>
+                <img src={Attractions} alt={'attractions'}/>
                 <p>Достопримечательности</p>
             </div>
         </div>

@@ -1,12 +1,12 @@
 import React from "react";
-import s from './Account.module.scss'
+import s from './AccountMe.module.scss'
 import Header from "../Header/Header";
 import {ReactComponent as Avatar} from "../../Common/img/Avatar.svg";
 import {NavLink} from "react-router-dom";
 import Citi from "../../Common/img/Main/PopularPlace/citi.png";
 import {ReactComponent as Like} from '../../Common/img/like.svg';
 
-const Account = () => {
+const AccountMe = () => {
     return (
         <>
             <Header/>
@@ -14,20 +14,20 @@ const Account = () => {
                 <div className={s.user__description}>
                     <div className={s.user__ava}>
                         <Avatar/>
-                        <p>Написать</p>
                     </div>
                     <div className={s.user__score}>
                         <p className={s.user__score__name}>Евгений Андреев</p>
-                        <p className={s.user__score__drop}>Оставить отзыв</p>
+                        <p className={s.user__score__drop}>Редактировать профиль</p>
                         <div className={s.user__score__el}>
                             <div>
                                 <p>4/5</p>
                             </div>
                             <p>16 отзывов</p>
                         </div>
+                        <p className={s.user__logout}>Выйти</p>
                     </div>
                     <div className={s.user__place}>
-                        <p>Посещения</p>
+                        <p>Вы посетили</p>
                         <NavLink to={'#'}>Московский кремль</NavLink>
                         <NavLink to={'#'}>Парк Горького</NavLink>
                         <NavLink to={'#'}>Парк “Сокольники”</NavLink>
@@ -44,7 +44,7 @@ const Account = () => {
                     </div>
                 </div>
                 <div className={s.user__placeimg}>
-                    <p>Может показать эти места</p>
+                    <p>Места, которые вы можете показать</p>
                     <div className={s.user__img}>
                         <div className={s.user__img__score}>
                             <img src={Citi}/>
@@ -87,10 +87,11 @@ const Account = () => {
                             </div>
                         </div>
                     </div>
+                    <button className={s.user__addplace}>Добавить место</button>
                 </div>
             </div>
         </>
     )
 }
 
-export default Account
+export default AccountMe
