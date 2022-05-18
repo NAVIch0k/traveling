@@ -1,32 +1,40 @@
 import './App.css';
-import Registration from "./Components/Registration/Registration";
 import Footer from "./Components/Footer/Footer";
 import {Redirect, Route, Switch} from "react-router-dom";
-import LogIn from "./Components/LogIn/LogIn";
 import Main from "./Components/Main/Main";
 import LifeCiti from "./Components/LifeCiti/LifeCiti";
 import Parks from "./Components/Parks/Parks";
 import Attractions from "./Components/Attractions/Attractions";
 import Itineraries from "./Components/Itineraries/Itineraries";
 import Account from "./Components/Account/Account";
-import AccountMe from "./Components/AccountMe/AccountMe";
 import InfoAboutPlace from "./Components/InfoAboutPlace/InfoAboutPlace";
+import Registration from "./Components/Registration/Registration";
+import LogIn from "./Components/LogIn/LogIn";
+import {useEffect} from "react";
+import {AuthMe} from "./Store/User";
+import {connect} from "react-redux";
+import AccountMeCont from "./Components/AccountMe/AccountMeCont";
 
-function App() {
+function App(props) {
+
+    useEffect(() => {
+        props.AuthMe()
+    }, [])
+
     return (
         <div className="app">
             <Switch>
-                <Route exact path={'/'} render={() => <Redirect to={'/main'}/>}/>
+                <Route exact path={'/'} render={() => <Redirect to={'/registration'}/>}/>
                 <Route path={'/registration'} render={() => <Registration/>}/>
                 <Route path={'/login'} render={() => <LogIn/>}/>
                 <Route path={'/main'} render={() => <Main/>}/>
-                <Route path={'/lifeciti'} render={()=><LifeCiti/>}/>
-                <Route path={'/parks'} render={()=><Parks/>}/>
-                <Route path={'/attractions'} render={()=><Attractions/>}/>
-                <Route path={'/itineraries'} render={()=><Itineraries/>}/>
-                <Route path={'/user'} render={()=><Account/>}/>
-                <Route path={'/userme'} render={()=><AccountMe/>}/>
-                <Route path={'/aboutplace'} render={()=><InfoAboutPlace/>}/>
+                <Route path={'/lifeciti'} render={() => <LifeCiti/>}/>
+                <Route path={'/parks'} render={() => <Parks/>}/>
+                <Route path={'/attractions'} render={() => <Attractions/>}/>
+                <Route path={'/itineraries'} render={() => <Itineraries/>}/>
+                <Route path={'/user'} render={() => <Account/>}/>
+                <Route path={'/userme'} render={() => <AccountMeCont/>}/>
+                <Route path={'/aboutplace'} render={() => <InfoAboutPlace/>}/>
                 <Route path='*' render={() => alert("404")}/>
             </Switch>
             <Footer/>
@@ -34,4 +42,4 @@ function App() {
     )
 }
 
-export default App;
+export default connect(null,{AuthMe})(App);

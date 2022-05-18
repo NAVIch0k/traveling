@@ -1,25 +1,30 @@
-import React from 'react';
-import {Field, reduxForm} from "redux-form";
-import s from './LogIn.module.scss'
-import {Form_control} from "../../Common/Forms_control/Forms_controls";
-import {NavLink} from "react-router-dom";
+import React, {useEffect} from 'react';
+import LogInForm from "./LogInForm";
+import {LoginSend} from "../../Store/User";
+import {connect} from "react-redux";
+import {useHistory} from "react-router-dom";
 
-const Input =Form_control('input')
-export const Registration_form = (props) => {
+export const LogIn = (props) => {
+
+    let history = useHistory()
+
+    useEffect(() => {
+        if (props.id) {
+            history.push('/main')
+        }
+    }, props.id)
+
+    let login = (data) => {
+        props.LoginSend(data)
+    }
+
     return (
-        <div className={s.registration}>
-            <header className={s.registration__header}>Loctravel</header>
-            <form className={s.registration__form}>
-                <h2 className={s.registration__title}>Авторизация</h2>
-                <Field className={s.registration__input} name={'email'} type={'email'} component={Input} placeholder={'Электропочта'}/>
-                <Field className={s.registration__input} name={'password'} type={'password'} component={Input} placeholder={'Пароль'}/>
-                <button className={s.registration__button}>Войти</button>
-                <NavLink to={'/registration'}>Зарегистрироваться</NavLink>
-            </form>
-        </div>
+        <LogInForm onSubmit={login}/>
     );
 };
 
-const LogIn=reduxForm({form:'login'})(Registration_form)
+let mapStateToProps = (state) => ({
+    id: state.user.user_id
+})
 
-export default  LogIn
+export default connect(mapStateToProps, {LoginSend})(LogIn)

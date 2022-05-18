@@ -1,27 +1,30 @@
-import React from 'react';
-import {Field, reduxForm} from "redux-form";
-import s from './Registration.module.scss'
-import {Form_control} from "../../Common/Forms_control/Forms_controls";
-import {NavLink} from "react-router-dom";
+import React, {useEffect} from 'react';
+import RegistrationForm from "./RegistrationForm";
+import {RegistrationSend} from "../../Store/User";
+import {connect} from "react-redux";
+import {useHistory} from "react-router-dom";
 
-const Input =Form_control('input')
-export const Registration_form = (props) => {
+export const Registration = (props) => {
+
+    let history = useHistory()
+
+    useEffect(() => {
+        if (props.id) {
+            history.push('/main')
+        }
+    }, props.id)
+
+    let registration=(data)=>{
+        props.RegistrationSend(data)
+    }
+
     return (
-        <div className={s.registration}>
-            <header className={s.registration__header}>Loctravel</header>
-            <form className={s.registration__form}>
-                <h2 className={s.registration__title}>Регистрация</h2>
-                <Field className={s.registration__input} name={'name'} type={'text'} component={Input} placeholder={'Имя'}/>
-                <Field className={s.registration__input} name={'lastName'} type={'text'} component={Input} placeholder={'Фамилия'}/>
-                <Field className={s.registration__input} name={'email'} type={'email'} component={Input} placeholder={'Электропочта'}/>
-                <Field className={s.registration__input} name={'password'} type={'password'} component={Input} placeholder={'Пароль'}/>
-                <button className={s.registration__button}>Зарегистрироваться</button>
-                <NavLink to={'/login'}>Войти</NavLink>
-            </form>
-        </div>
+        <RegistrationForm onSubmit={registration}/>
     );
 };
 
-const Registration=reduxForm({form:'registration'})(Registration_form)
+let mapStateToProps=(state)=>({
+    id:state.user.user_id
+})
 
-export default  Registration
+export default  connect(mapStateToProps,{RegistrationSend})(Registration)
