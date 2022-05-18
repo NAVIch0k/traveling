@@ -1,8 +1,6 @@
 import React from 'react'
 import Header from "../Header/Header";
 import s from './InfoAboutPlace.module.scss'
-import Park1 from '../../Common/img/Park/park1.jpg'
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {ReactComponent as Avatar} from "../../Common/img/Avatar.svg";
@@ -37,16 +35,6 @@ const InfoAboutPlace = () => {
                     <p>Оставить отзыв</p>
                 </div>
             </div>
-        </div>
-        <div>
-            <Slider {...settings}>
-                <div>
-                    <img src={Park1} alt="park"/>
-                </div>
-                <div>
-                    <img src={Park1} alt="park"/>
-                </div>
-            </Slider>
         </div>
         <div className={s.description}>
             <div className={s.description__text}>
@@ -106,7 +94,7 @@ const InfoAboutPlace = () => {
                 </div>
                 <div className={s.reviews__el}>
                     <Avatar/>
-                    <div>
+                    <div className={s.reviews__el__text}>
                         <div className={s.reviews__el__name}>
                             <p>Антон поставил</p>
                             <p>4/5</p>
@@ -115,6 +103,34 @@ const InfoAboutPlace = () => {
                             показал самые красивые места этого парка и дал возможность максимально прочувствовать
                             исторические места района.</p>
                     </div>
+                </div>
+                <div className={s.reviews__el}>
+                    <Avatar/>
+                    <div className={s.reviews__el__text}>
+                        <div className={s.reviews__el__name}>
+                            <p>Антон поставил</p>
+                            <p>4/5</p>
+                        </div>
+                        <p>Место действительно интересное, хотелось бы сходить еще раз. Спасибо моему гиду Артему -
+                            показал самые красивые места этого парка и дал возможность максимально прочувствовать
+                            исторические места района.</p>
+                    </div>
+                </div>
+                <div className={s.reviews__el}>
+                    <Avatar/>
+                    <div className={s.reviews__el__text}>
+                        <div className={s.reviews__el__name}>
+                            <p>Антон поставил</p>
+                            <p>4/5</p>
+                        </div>
+                        <p>Место действительно интересное, хотелось бы сходить еще раз. Спасибо моему гиду Артему -
+                            показал самые красивые места этого парка и дал возможность максимально прочувствовать
+                            исторические места района.</p>
+                    </div>
+                </div>
+                <div className={s.reviews__send}>
+                    <textarea type="text" placeholder={'Напишите отзыв'}/>
+                    <button>Отправить</button>
                 </div>
             </div>
         </div>

@@ -215,34 +215,34 @@
   }
 }
 
-.reviews{
-  max-width:1097px;
+.reviews {
+  max-width: 1097px;
   width: 100%;
   height: auto;
   padding: 29px 23px;
   margin-top: 98px;
-  background:transparent;
+  background: transparent;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 
-  p{
+  p {
     margin: 0;
   }
 
-  &__header{
+  &__header {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 36px;
 
-    p{
+    p {
       font-family: 'Raleway';
       font-weight: 400;
       font-size: 20px;
       line-height: 23px;
     }
 
-    div{
+    div {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -259,16 +259,17 @@
     }
   }
 
-  &__el{
+  &__el {
     display: flex;
     gap: 10px;
+    margin-bottom: 30px;
 
     font-family: 'Raleway';
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
 
-    &__name{
+    &__name {
       margin-bottom: 15px;
       display: flex;
       gap: 5px;
@@ -277,10 +278,55 @@
       font-size: 18px;
       line-height: 21px;
 
-      p:last-child{
+      p:last-child {
         color: #3BB33B;
         font-feature-settings: 'pnum' on, 'lnum' on;
       }
+    }
+
+    &__text {
+      max-width: 90%;
+    }
+  }
+
+  &__send {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 30px;
+    border: 1px solid #FFC56F;
+    border-radius: 10px;
+
+    textarea {
+      resize: block;
+      width: 85%;
+      border: none;
+      font-family: 'Raleway';
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      color:black;
+      outline:none;
+      ::placeholder {
+        color: #383838;
+      }
+    }
+
+    button{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 122px;
+      height: 33px;
+      border: none;
+      background: #FFC56F;
+      border-radius: 8px;
+      font-family: 'Raleway';
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23px;
+      color: #000000;
     }
   }
 }
