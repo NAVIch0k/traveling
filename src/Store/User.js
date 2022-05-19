@@ -28,7 +28,7 @@ const userReducer = (state = initialState, action) => {
 }
 
 const SetUserDataAC = (data) => ({type: REGISTRATION, data})
-const DeleteUserDataAC = () => ({type: REGISTRATION})
+const DeleteUserDataAC = () => ({type: DELETE})
 
 export const RegistrationSend = (data) => async (dispatch) => {
     try {

@@ -8,7 +8,7 @@ const Footer = () => {
             <div className={s.footer_wrapper}>
                 <div className={s.footer__link}>
                     <NavLink to={'/main'}>Главная</NavLink>
-                    <NavLink to={'#'}>Популярные места</NavLink>
+                    <NavLink to={'/main#popularplace'}>Популярные места</NavLink>
                     <NavLink to={'#'}>Показать место</NavLink>
                     <NavLink to={'#'}>Избранное</NavLink>
                     <NavLink to={'#'}>Евгений</NavLink>

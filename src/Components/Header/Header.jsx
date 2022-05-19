@@ -1,9 +1,11 @@
 import React from "react";
-import {ReactComponent as Avatar} from "../../Common/img/Avatar.svg";
 import s from './Header.module.scss'
 import {NavLink, useHistory} from "react-router-dom";
+import {useSelector} from "react-redux";
 
 const Header = () => {
+
+    let {l_name,photo_path}=useSelector(state => state.user)
 
     let history = useHistory()
 
@@ -26,8 +28,8 @@ const Header = () => {
                 <a href={'#popularplace'}>Популярные места</a>
                 <NavLink to={'#'}>Стать гидом</NavLink>
                 <NavLink to={'#'}>Избранное</NavLink>
-                <NavLink to={'/userme'}>Евгений</NavLink>
-                <NavLink to={'/userme'}><Avatar/></NavLink>
+                <NavLink to={'/userme'}>{l_name}</NavLink>
+                <NavLink to={'/userme'}><img src={`http://188.225.83.101/api/static/img/${photo_path}`}/></NavLink>
             </nav>
         </div>
     )

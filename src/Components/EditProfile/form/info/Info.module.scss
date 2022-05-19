@@ -1,0 +1,66 @@
+.info {
+    display: grid;
+    grid-template-areas:
+        "name lastname lastname lastname"
+        "email description description description"
+        "password description description description"
+        "button description description description";
+
+    grid-template-columns: 378px;
+    column-gap: 55px;
+    row-gap: 84px;
+
+    &__title {
+        margin: 0px;
+
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+
+        color: #000000;
+    }
+
+    &__input {
+        padding: 0px;
+        width: 100%;
+
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+
+        color: #8E8E8E;
+
+        padding-bottom: 8px;
+
+        border: none;
+        border-bottom: 1px solid #000;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1185px){
+    .info{
+        grid-template-areas:
+        "name name name name"
+        "lastname lastname lastname lastname"
+        "email email email email"
+        "description description description description"
+        "password password password password"
+        "button button button button";
+
+        row-gap: 43px;
+        grid-template-columns: 1fr;
+        margin-bottom: 46px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .info{
+        row-gap: 60px;
+    }
+}

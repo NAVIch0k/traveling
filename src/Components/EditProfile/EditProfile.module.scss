@@ -1,0 +1,88 @@
+.editProfile{
+    background-color: white;
+    position: fixed;
+    top: 25%;
+    align-self: center;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 20px;
+    transition: 0.5s;
+    max-width: 1405px;
+    min-width: 320px;
+    padding-bottom: 100px;
+    width: 100%;
+
+    &__close{
+        width: 57px;
+        height: 57px;
+
+        position: absolute;
+        top: 46px;
+        right: 100px;
+
+        border-radius: 50%;
+        background-color: transparent;
+        border: unset;
+
+        background-image: url(../assets/close.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+
+        cursor: pointer;
+
+        &:active{
+            outline: none;
+        }
+    }
+
+    &__info{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 53px;
+
+        margin-top: 100px;
+    }
+}
+@media screen and (max-width: 768px){
+    .editProfile{
+        padding: 0px 81px;
+
+        &__close{
+            top: 46px;
+            right: 81px;
+        }
+
+        &__info{
+            flex-direction: column;
+            row-gap: 60px;
+            
+            margin-top: 46px;
+        }
+    }
+}
+
+@media screen and (max-width: 495px){
+    .editProfile{
+        padding: 0px 16px;
+
+        &__close{
+            top: 46px;
+            right: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 412px){
+    .editProfile{
+        &__close{
+            top: 46px;
+            right: 16px;
+        }
+    }
+}
+
+.active{
+    opacity: 1;
+    pointer-events: all;
+}

@@ -1,20 +1,22 @@
 import React from "react";
 import s from './AccountMe.module.scss'
-import {ReactComponent as Avatar} from "../../Common/img/Avatar.svg";
 import {NavLink} from "react-router-dom";
 import Citi from "../../Common/img/Main/PopularPlace/citi.png";
 import {ReactComponent as Like} from '../../Common/img/like.svg';
+import {useSelector} from "react-redux";
 
 const AccountMe = (props) => {
+
+    let {f_name, l_name,photo_path} = useSelector(state => state.user)
+
     return (
         <div className={s.user}>
             <div className={s.user__description}>
-                <div className={s.user__ava}>
-                    <Avatar/>
-                </div>
+                <img src={`http://188.225.83.101/api/static/img/${photo_path}`} alt={'avatar img'} className={s.user__ava}/>
                 <div className={s.user__score}>
-                    <p className={s.user__score__name}>Евгений Андреев</p>
-                    <p className={s.user__score__drop}>Редактировать профиль</p>
+                    <p className={s.user__score__name}>{f_name + " " + l_name}</p>
+                    <p className={s.user__score__drop} onClick={() => props.setEditPopUp(true)}>Редактировать
+                        профиль</p>
                     <div className={s.user__score__el}>
                         <div>
                             <p>4/5</p>

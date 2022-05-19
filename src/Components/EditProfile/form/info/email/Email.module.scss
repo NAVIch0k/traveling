@@ -1,0 +1,42 @@
+.email {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 378px;
+
+    row-gap: 10px;
+
+    grid-area: email;
+
+    &__title {
+        margin: 0px;
+
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+
+        color: #000000;
+    }
+
+    &__input {
+        padding: 0px;
+        width: 100%;
+
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+
+        color: #8E8E8E;
+
+        padding-bottom: 8px;
+
+        border: none;
+        border-bottom: 1px solid #000;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
