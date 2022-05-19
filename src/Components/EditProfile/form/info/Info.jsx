@@ -2,6 +2,8 @@ import React from 'react';
 
 //  STYLES
 import s from './Info.module.scss'
+
+//  test
 const Info = () => {
     return (
         <div className={s.info}>
