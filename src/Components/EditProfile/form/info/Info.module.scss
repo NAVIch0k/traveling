@@ -10,8 +10,83 @@
     column-gap: 55px;
     row-gap: 84px;
 
+    &__block {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 378px;
+    }
+
+    &__name {
+        grid-area: name;
+    }
+
+    &__lastName {
+        grid-area: lastname;
+    }
+
+    &__email {
+        grid-area: email;
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+
+        grid-area: description;
+    }
+
+    &__password {
+        row-gap: 10px;
+        grid-area: password;
+    }
+
+    &__password {
+        grid-area: password;
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+
+        grid-area: button;
+    }
+
+    &__save {
+        padding: 12px 20px;
+
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+
+        color: #000000;
+
+        background-color: #FFC56F;
+        border: unset;
+        border-radius: 10px;
+
+        cursor: pointer;
+    }
+
+    &__cancel {
+        margin: 0px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        text-decoration-line: underline;
+
+        color: #000000;
+
+        cursor: pointer;
+    }
+
     &__title {
         margin: 0px;
+        margin-bottom: 10px;
 
         font-family: 'Raleway';
         font-style: normal;
@@ -41,17 +116,49 @@
             outline: none;
         }
     }
+
+    &__text {
+        margin: 0px;
+
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+
+        color: #000000;
+    }
+
+    &__paragraf {
+        width: 100%;
+        max-width: 562px;
+
+        margin: 0px;
+
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+
+        color: #383838;
+
+        padding: 20px;
+
+        border: 1px solid #383838;
+        border-radius: 20px;
+
+        box-sizing: border-box;
+    }
 }
 
-@media screen and (max-width: 1185px){
-    .info{
+@media screen and (max-width: 1185px) {
+    .info {
         grid-template-areas:
-        "name name name name"
-        "lastname lastname lastname lastname"
-        "email email email email"
-        "description description description description"
-        "password password password password"
-        "button button button button";
+            "name name name name"
+            "lastname lastname lastname lastname"
+            "email email email email"
+            "description description description description"
+            "password password password password"
+            "button button button button";
 
         row-gap: 43px;
         grid-template-columns: 1fr;
@@ -59,8 +166,38 @@
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .info{
+
+        &__description {
+            margin: 17px 0px
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .info {
         row-gap: 60px;
+    }
+}
+
+@media screen and (max-width: 1185px) {
+    .info{
+
+        &__description {
+            margin: 41px 0px
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .info {
+
+        &__button {
+            flex-direction: column;
+            align-items: flex-start;
+
+            row-gap: 30px;
+        }
     }
 }
