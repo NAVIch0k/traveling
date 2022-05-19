@@ -4,6 +4,7 @@ import React from 'react';
 import s from './Info.module.scss'
 
 //  test
+
 const Info = () => {
     return (
         <div className={s.info}>
