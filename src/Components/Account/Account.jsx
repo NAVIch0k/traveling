@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import s from './Account.module.scss'
 import Header from "../Header/Header";
 import {ReactComponent as Avatar} from "../../Common/img/Avatar.svg";
@@ -6,7 +6,11 @@ import {NavLink} from "react-router-dom";
 import Citi from "../../Common/img/Main/PopularPlace/citi.png";
 import {ReactComponent as Like} from '../../Common/img/like.svg';
 
-const Account = () => {
+//  COMPONENTS
+import Message from "../Message/Message";
+
+const Account = (props) => {
+
     return (
         <>
             <Header/>
@@ -18,7 +22,7 @@ const Account = () => {
                     </div>
                     <div className={s.user__score}>
                         <p className={s.user__score__name}>Евгений Андреев</p>
-                        <p className={s.user__score__drop}>Оставить отзыв</p>
+                        <p className={s.user__score__drop} onClick={() => props.setReviewPopup(true)}>Оставить отзыв</p>
                         <div className={s.user__score__el}>
                             <div>
                                 <p>4/5</p>

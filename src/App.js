@@ -14,6 +14,7 @@ import {useEffect} from "react";
 import {AuthMe} from "./Store/User";
 import {connect} from "react-redux";
 import AccountMeCont from "./Components/AccountMe/AccountMeCont";
+import AccountCont from './Components/Account/AccountCont';
 
 function App(props) {
 
@@ -32,7 +33,7 @@ function App(props) {
                 <Route path={'/parks'} render={() => <Parks/>}/>
                 <Route path={'/attractions'} render={() => <Attractions/>}/>
                 <Route path={'/itineraries'} render={() => <Itineraries/>}/>
-                <Route path={'/user'} render={() => <Account/>}/>
+                <Route path={'/user'} render={() => <AccountCont/>}/>
                 <Route path={'/userme'} render={() => <AccountMeCont/>}/>
                 <Route path={'/aboutplace'} render={() => <InfoAboutPlace/>}/>
                 <Route path='*' render={() => alert("404")}/>
