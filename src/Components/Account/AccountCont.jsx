@@ -1,21 +1,19 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Account from './Account';
-import Header from "../Header/Header";
 import Reviews from '../Reviews/Reviews';
-import {compose} from "redux";
-import {WithAuthRedirect} from "../../HOC/WithAuthRedirecr";
-import {connect} from "react-redux";
-import {DeleteSend} from "../../Store/User";
+import Message from "../Message/Message";
 
 const AccountCont = () => {
 
-    let [reviewPopup,setReviewPopup]=useState(false)
+    let [reviewPopup, setReviewPopup] = useState(false)
+    let [messagePopup, setMessagePopup] = useState(false)
 
 
     return (
         <>
-            <Account setReviewPopup={setReviewPopup}/>
-            <Reviews reviewPopup={reviewPopup} setReviewPopup={setReviewPopup}/>
+            <Account setReviewPopup={setReviewPopup} setMessagePopup={setMessagePopup} />
+            <Reviews reviewPopup={reviewPopup} setReviewPopup={setReviewPopup} />
+            <Message messagePopup={messagePopup} setMessagePopup={setMessagePopup} />
         </>
     )
 }

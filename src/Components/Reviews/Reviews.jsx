@@ -6,10 +6,16 @@ import Rating from './rating/Rating';
 import s from './Reviews.module.scss'
 
 const Reviews = (props) => {
+
+    function closeReviewPopup(event){
+        event.preventDefault()
+        props.setReviewPopup(false)
+    }
+
     return (
-        <div className={props.reviewPopup ? s.active + ' ' +s.reviews : s.reviews}>
+        <form className={props.reviewPopup ? s.active + ' ' +s.reviews : s.reviews}>
                 <button className={s.reviews__close}
-                onClick={() => props.setReviewPopup(false)}></button>
+                onClick={closeReviewPopup}></button>
             <div className={s.reviews__info}>
                 <h2 className={s.reviews__title}>Оставьте отзыв о <span className={s.reviews__name}>Евгений Андреев</span></h2>
             </div>
@@ -17,9 +23,10 @@ const Reviews = (props) => {
             <Rating />
             <div className={s.reviews__button}>
                 <button className={s.reviews__send}>Отправить</button>
-                <p className={s.reviews__cancel}>Отмена</p>
+                <p className={s.reviews__cancel}
+                onClick={closeReviewPopup}>Отмена</p>
             </div>
-        </div>
+        </form>
     );
 };
 
