@@ -5,12 +5,12 @@ const DELETE = 'DELETE_USER'
 
 
 let initialState = {
-    description: 1,
-    email: "1",
-    f_name: "1",
-    l_name: "1",
-    photo_path: "1",
-    reg_date: "1",
+    description: '',
+    email: '',
+    f_name: '',
+    l_name: '',
+    photo_path: '',
+    reg_date: '',
     user_id: 1
 }
 
