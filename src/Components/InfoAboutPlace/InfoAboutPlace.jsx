@@ -3,24 +3,15 @@ import Header from "../Header/Header";
 import s from './InfoAboutPlace.module.scss'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import {ReactComponent as Avatar} from "../../Common/img/Avatar.svg";
+import { ReactComponent as Avatar } from "../../Common/img/Avatar.svg";
+
+//  COMPONENTS
+import Slider from './Slider/Carousel';
 
 const InfoAboutPlace = () => {
 
-    const settings = {
-        dots: true,
-        lazyLoad: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        initialSlide: 2,
-        adaptiveHeight: true,
-        variableWidth: true,
-    };
-
     return (<>
-        <Header/>
+        <Header />
         <div className={s.about}>
             <div className={s.about__name}>
                 <div className={s.about__name__header}>
@@ -36,6 +27,9 @@ const InfoAboutPlace = () => {
                 </div>
             </div>
         </div>
+
+        <Slider />
+
         <div className={s.description}>
             <div className={s.description__text}>
                 <div>
@@ -67,19 +61,19 @@ const InfoAboutPlace = () => {
                 <div className={s.description__text__people__block}>
                     <p>Это место вам могут показать</p>
                     <div className={s.description__text__people__block__el}>
-                        <Avatar/>
+                        <Avatar />
                         <p>Евгений</p>
                         <div>4/5</div>
                         <p>от 2400р.</p>
                     </div>
                     <div className={s.description__text__people__block__el}>
-                        <Avatar/>
+                        <Avatar />
                         <p>Евгений</p>
                         <div>4/5</div>
                         <p>от 2400р.</p>
                     </div>
                     <div className={s.description__text__people__block__el}>
-                        <Avatar/>
+                        <Avatar />
                         <p>Евгений</p>
                         <div>4/5</div>
                         <p>от 2400р.</p>
@@ -93,7 +87,7 @@ const InfoAboutPlace = () => {
                     <div>4/5</div>
                 </div>
                 <div className={s.reviews__el}>
-                    <Avatar/>
+                    <Avatar />
                     <div className={s.reviews__el__text}>
                         <div className={s.reviews__el__name}>
                             <p>Антон поставил</p>
@@ -105,7 +99,7 @@ const InfoAboutPlace = () => {
                     </div>
                 </div>
                 <div className={s.reviews__el}>
-                    <Avatar/>
+                    <Avatar />
                     <div className={s.reviews__el__text}>
                         <div className={s.reviews__el__name}>
                             <p>Антон поставил</p>
@@ -117,7 +111,7 @@ const InfoAboutPlace = () => {
                     </div>
                 </div>
                 <div className={s.reviews__el}>
-                    <Avatar/>
+                    <Avatar />
                     <div className={s.reviews__el__text}>
                         <div className={s.reviews__el__name}>
                             <p>Антон поставил</p>
@@ -129,7 +123,7 @@ const InfoAboutPlace = () => {
                     </div>
                 </div>
                 <div className={s.reviews__send}>
-                    <textarea type="text" placeholder={'Напишите отзыв'}/>
+                    <textarea type="text" placeholder={'Напишите отзыв'} />
                     <button>Отправить</button>
                 </div>
             </div>

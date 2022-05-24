@@ -26,7 +26,7 @@ const Header = () => {
             <nav className={s.header__nav}>
                 <NavLink to={'/main'}>Главная</NavLink>
                 <a href={'#popularplace'}>Популярные места</a>
-                <NavLink to={'#'}>Стать гидом</NavLink>
+                <NavLink to={'/becomeGuide'}>Стать гидом</NavLink>
                 <NavLink to={'#'}>Избранное</NavLink>
                 <NavLink to={'/userme'}>{l_name}</NavLink>
                 <NavLink to={'/userme'}><img src={`http://188.225.83.101/api/static/img/${photo_path}`}/></NavLink>

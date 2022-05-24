@@ -1,0 +1,39 @@
+.button {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+
+    &__order {
+        padding: 12px 20px;
+
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+
+        color: #000000;
+
+        background-color: #FFC56F;
+
+        border-radius: 10px;
+        border: unset;
+
+        cursor: pointer;
+    }
+
+    &__cancel {
+        margin: 0px;
+
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+
+        color: #000000;
+        text-decoration-line: underline;
+
+        cursor: pointer;
+    }
+}

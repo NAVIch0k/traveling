@@ -1,5 +1,5 @@
 .reviews {
-    background-color: wheat;
+    background-color: #fff;
 
     width: 100%;
     max-width: 1097px;
@@ -32,7 +32,12 @@
 
     opacity: 0;
 
-    &__close{
+    max-height: 100vh;
+
+    overflow: auto;
+
+
+    &__close {
         position: absolute;
         top: 40px;
         right: 50px;
@@ -80,6 +85,7 @@
     &__textarea {
         width: 100%;
         max-width: 1097px;
+
 
         height: 200px;
 
@@ -148,22 +154,41 @@
 
 }
 
-@media screen and (max-width:550px){
-    .reviews{
+@media screen and (max-width:550px) {
+    .reviews {
 
-        &__info{
+        &__info {
             max-width: 144px;
         }
 
-        &__title{
+        &__title {
             font-size: 16px;
         }
 
-        &__textarea{
+        &__textarea {
             font-size: 16px;
         }
     }
 }
+
+@media screen and (max-width: 420px) {
+    .reviews {
+        padding: 50px 16px;
+
+        &__textarea {
+            min-height: 320px;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .reviews {
+        &__close {
+            top: 29px;
+        }
+    }
+}
+
 .active {
     opacity: 1;
     pointer-events: all;

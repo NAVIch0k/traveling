@@ -21,7 +21,7 @@
 
     z-index: 1;
 
-    background-color: wheat;
+    background-color: #fff;
 
     border-radius: 20px;
 
@@ -30,6 +30,10 @@
     transition: 0.5s;
 
     pointer-events: none;
+
+    overflow: auto;
+
+    max-height: 100vh;
 
     &__title {
         margin: 0px;
@@ -172,7 +176,7 @@
         padding: 0px 34px;
 
         &__textarea {
-            height: 324px;
+            min-height: 324px;
         }
     }
 }

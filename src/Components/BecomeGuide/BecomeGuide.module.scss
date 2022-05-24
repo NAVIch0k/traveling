@@ -1,0 +1,60 @@
+.becomeGuide {
+    display: flex;
+    flex-direction: column;
+    row-gap: 70px;
+
+    width: 100%;
+    max-width: 1920px;
+    min-width: 320px;
+
+    margin: 0 auto;
+
+    padding: 0px 100px;
+
+    box-sizing: border-box;
+
+    &__header {
+        margin: 0px;
+
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+
+        color: #000000;
+    }
+
+    &__title {
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .becomeGuide {
+        padding: 0px 24px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .becomeGuide {
+
+        &__header {
+            max-width: 450px;
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .becomeGuide {
+
+        &__header {
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .becomeGuide {
+        padding: 0px 16px;
+    }
+}

@@ -1,0 +1,127 @@
+.place {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 1160px;
+    row-gap: 20px;
+
+    grid-area: place;
+
+    &__title {
+        margin: 0px;
+
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+
+        color: #000000;
+    }
+
+    &__list {
+        display: grid;
+        grid-gap: 12px;
+        grid-template-columns: repeat(auto-fill, 205px);
+    }
+
+    &__text {
+        margin: 0px;
+
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+
+
+        color: #383838;
+
+        padding: 11px 24px;
+
+        border: 1px solid #383838;
+        border-radius: 10px;
+
+        cursor: pointer;
+
+        transition: 0.5s;
+    }
+
+    // Модификатор к тексту
+    &__active{
+        background-color: #3BB33B;
+        border: unset;
+    }
+
+    &__button {
+        width: 100%;
+        max-width: 378px;
+
+        padding: 0px;
+        padding-bottom: 8px;
+        padding-top: 11px;
+
+        margin-top: 20px;
+
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+
+        border: unset;
+
+        border-bottom: 1px solid #000;
+
+        outline: none;
+    }
+
+    &__showmore {
+        display: none;
+
+        margin: 0px;
+
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+
+        text-decoration-line: underline;
+
+        color: #383838;
+
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .place {
+        max-width: 919px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .place {
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .place {
+
+        &__showmore {
+            display: unset;
+        }
+    }
+}
+
+@media screen and (max-width: 360px){
+    .place{
+
+        &__text{
+            font-size: 14px;
+        }
+    }
+}

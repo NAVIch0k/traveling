@@ -1,0 +1,19 @@
+.grid{
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 100px;
+    column-gap: 105px;
+    grid-template-areas: 
+    "category place"
+    ". price";
+}
+
+@media screen and (max-width: 1245px){
+    .grid{
+        grid-template-areas: 
+        "category"
+        "place"
+        "price";
+        grid-template-columns: 1fr;
+    }
+}

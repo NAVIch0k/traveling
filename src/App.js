@@ -6,7 +6,6 @@ import LifeCiti from "./Components/LifeCiti/LifeCiti";
 import Parks from "./Components/Parks/Parks";
 import Attractions from "./Components/Attractions/Attractions";
 import Itineraries from "./Components/Itineraries/Itineraries";
-import Account from "./Components/Account/Account";
 import InfoAboutPlace from "./Components/InfoAboutPlace/InfoAboutPlace";
 import Registration from "./Components/Registration/Registration";
 import LogIn from "./Components/LogIn/LogIn";
@@ -15,6 +14,9 @@ import {AuthMe} from "./Store/User";
 import {connect} from "react-redux";
 import AccountMeCont from "./Components/AccountMe/AccountMeCont";
 import AccountCont from './Components/Account/AccountCont';
+import BecomeGuideCont from './Components/BecomeGuide/BecomeGuideCont'
+
+import Slider from './Components/InfoAboutPlace/Slider/Carousel'
 
 function App(props) {
 
@@ -36,6 +38,7 @@ function App(props) {
                 <Route path={'/user'} render={() => <AccountCont/>}/>
                 <Route path={'/userme'} render={() => <AccountMeCont/>}/>
                 <Route path={'/aboutplace'} render={() => <InfoAboutPlace/>}/>
+                <Route path={'/becomeGuide'} render={() => <BecomeGuideCont/>}/>
                 <Route path='*' render={() => alert("404")}/>
             </Switch>
             <Footer/>

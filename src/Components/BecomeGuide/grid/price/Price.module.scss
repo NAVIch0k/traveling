@@ -1,0 +1,97 @@
+.price {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    grid-area: price;
+
+    &__title {
+        margin: 0px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+
+        color: #000000;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 12px;
+        row-gap: 12px;
+    }
+
+    &__text {
+        margin: 0px;
+
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+
+        color: #383838;
+
+        padding: 11px 20px;
+
+        border: 1px solid #383838;
+        border-radius: 10px;
+
+        cursor: pointer;
+
+        transition: 0.5s;
+    }
+
+    // Модификатор к тексту
+    &__active{
+        background-color: #3BB33B;
+        border: unset;
+    }
+
+    &__button {
+        width: 100%;
+        max-width: 378px;
+
+        padding: 0px;
+        padding-top: 11px;
+        padding-bottom: 8px;
+
+        margin-top: 20px;
+
+        border: unset;
+        border-bottom: 1px solid #000;
+
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+
+        color: #000000;
+
+        outline: none;
+    }
+
+    &__becomeGuide {
+        margin-top: 50px;
+        width: 100%;
+        max-width: 145px;
+
+        padding: 12px 20px;
+
+        border: unset;
+        border-radius: 10px;
+
+        background-color: #FFC56F;
+
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+
+        color: #000000;
+
+        cursor: pointer;
+    }
+}
