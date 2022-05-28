@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 //  img
-import img from './svg/slider1.svg'
+import img from '../../assets/svg/infoAboutPlace/slider1.svg'
 
 // Стили для блока с каруселью
 import s from './Carousel.module.scss'
