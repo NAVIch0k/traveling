@@ -16,8 +16,6 @@ import AccountMeCont from "./Components/AccountMe/AccountMeCont";
 import AccountCont from './Components/Account/AccountCont';
 import BecomeGuideCont from './Components/BecomeGuide/BecomeGuideCont'
 
-import Slider from './Components/InfoAboutPlace/Slider/Carousel'
-
 function App(props) {
 
     useEffect(() => {

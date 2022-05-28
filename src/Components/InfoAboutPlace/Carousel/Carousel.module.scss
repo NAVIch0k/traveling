@@ -1,0 +1,117 @@
+.carousel {
+    width: 100%;
+    max-width: 1920px;
+    height: auto;
+
+    margin: 0 auto;
+
+    position: relative;
+
+    box-sizing: border-box;
+
+    &__img {
+        width: 100%;
+    }
+
+    &__dots{
+        display: flex;
+        justify-content: center;
+
+        margin: 0px;
+        padding: 0px;
+
+        position: relative;
+        bottom: 60px;
+        
+        li{
+            width: auto !important;
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__dot{
+        display: flex;
+
+        background-color: #fff;
+        width: 10px;
+        height: 10px;
+
+        border-radius: 50%;
+
+        transition: 0.5s;
+    }
+
+    &__buttonLeft{
+        width: 50px;
+        height: 50px;
+
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+
+        z-index: 1;
+
+        border: unset;
+
+        background-color: red;
+
+        background-image: url(./svg/left.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+
+        background-color: transparent;
+
+        cursor: pointer;
+    }
+    &__buttonRight{
+        width: 50px;
+        height: 65px;
+
+        position: absolute;
+        top: 50%;
+        right: 20px;
+
+        transform: translateY(-50%);
+
+        z-index: 1;
+
+        border: unset;
+
+        background-image: url(./svg/right.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+
+        background-color: transparent;
+
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .carousel{
+
+        &__dot{
+            width: 5px;
+            height: 5px;
+        }
+
+        &__dots{
+            bottom: 40px;
+        }
+
+        &__buttonRight{
+            width: 30px;
+            height: 30px;
+        }
+
+        &__buttonLeft{
+            width: 30px;
+            height: 30px;
+        }
+    }
+}

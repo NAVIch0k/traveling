@@ -1,18 +1,16 @@
 import React from 'react'
 import Header from "../Header/Header";
 import s from './InfoAboutPlace.module.scss'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { ReactComponent as Avatar } from "../../Common/img/Avatar.svg";
 
 //  COMPONENTS
-import Slider from './Slider/Carousel';
+import Carousel from './Carousel/Carousel.jsx';
 
 const InfoAboutPlace = () => {
 
     return (<>
-        <Header />
-        <div className={s.about}>
+        {/* <Header /> */}
+        {/* <div className={s.about}>
             <div className={s.about__name}>
                 <div className={s.about__name__header}>
                     <p>Парк Горького</p>
@@ -26,11 +24,11 @@ const InfoAboutPlace = () => {
                     <p>Оставить отзыв</p>
                 </div>
             </div>
-        </div>
+        </div> */}
 
-        <Slider />
+        <Carousel />
 
-        <div className={s.description}>
+        {/* <div className={s.description}>
             <div className={s.description__text}>
                 <div>
                     <h1>Парк Горького</h1>
@@ -127,7 +125,7 @@ const InfoAboutPlace = () => {
                     <button>Отправить</button>
                 </div>
             </div>
-        </div>
+        </div> */}
     </>)
 }
 
